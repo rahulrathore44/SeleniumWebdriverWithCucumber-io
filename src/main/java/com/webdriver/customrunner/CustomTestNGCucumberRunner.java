@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import cucumber.api.java.it.Ma;
 import cucumber.api.testng.CucumberExceptionWrapper;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.CucumberFeatureWrapperImpl;
@@ -21,7 +20,6 @@ import cucumber.runtime.io.ResourceLoader;
 import cucumber.runtime.io.ResourceLoaderClassFinder;
 import cucumber.runtime.model.CucumberFeature;
 import gherkin.formatter.Formatter;
-import gherkin.formatter.model.Tag;
 
 public class CustomTestNGCucumberRunner {
 	

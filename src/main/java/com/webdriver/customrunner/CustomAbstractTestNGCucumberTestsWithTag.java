@@ -1,15 +1,7 @@
 package com.webdriver.customrunner;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-
-import cucumber.api.testng.CucumberFeatureWrapper;
-import cucumber.api.testng.TestNGCucumberRunner;
-
 public class CustomAbstractTestNGCucumberTestsWithTag {
-	private CustomTestNGCucumberRunnerWithTag testNGCucumberRunner;
+	/*private CustomTestNGCucumberRunnerWithTag testNGCucumberRunner;
 
     @BeforeClass(alwaysRun = true)
     public void setUpClass() throws Exception {
@@ -21,9 +13,9 @@ public class CustomAbstractTestNGCucumberTestsWithTag {
         testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
     }
 
-    /**
+    *//**
      * @return returns two dimensional array of {@link CucumberFeatureWrapper} objects.
-     */
+     *//*
     @DataProvider
     public Object[][] features() {
         return testNGCucumberRunner.provideFeatures();
@@ -32,6 +24,6 @@ public class CustomAbstractTestNGCucumberTestsWithTag {
     @AfterClass(alwaysRun = true)
     public void tearDownClass() throws Exception {
         testNGCucumberRunner.finish();
-    }
+    }*/
 
 }

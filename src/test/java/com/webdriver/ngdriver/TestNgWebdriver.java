@@ -9,7 +9,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.paulhammant.ngwebdriver.ByAngular;
-import com.paulhammant.ngwebdriver.ByAngularModel;
 import com.paulhammant.ngwebdriver.NgWebDriver;
 import com.webdriver.utils.ResourceUtils;
 

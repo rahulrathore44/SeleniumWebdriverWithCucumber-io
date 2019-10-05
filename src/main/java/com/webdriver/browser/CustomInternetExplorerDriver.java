@@ -1,7 +1,5 @@
 package com.webdriver.browser;
 
-import static org.openqa.selenium.ie.InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 

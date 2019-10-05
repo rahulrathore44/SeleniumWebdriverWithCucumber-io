@@ -4,7 +4,6 @@ import org.junit.Test;
 import org.openqa.selenium.WebElement;
 
 import com.paulhammant.ngwebdriver.ByAngular;
-import com.paulhammant.ngwebdriver.ByAngularModel;
 
 public class TestNgWebdriverRepeat extends TestNgCommonBase {
 	

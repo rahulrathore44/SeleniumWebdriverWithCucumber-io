@@ -1,7 +1,5 @@
 package com.webdriver.page.factory;
 
-import javax.management.RuntimeErrorException;
-
 import org.openqa.selenium.WebDriver;
 
 import com.webdriver.page.EnterBugClass;

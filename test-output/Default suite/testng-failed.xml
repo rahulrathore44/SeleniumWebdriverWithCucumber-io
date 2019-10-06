@@ -5,7 +5,7 @@
     <classes>
       <class name="com.webdriver.runner.CustomGenericRunner">
         <methods>
-          <include name="runScenario" invocation-numbers="4 7 8"/>
+          <include name="runScenario" invocation-numbers="8"/>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
         </methods>

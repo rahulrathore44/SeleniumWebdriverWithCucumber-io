@@ -67,7 +67,13 @@ public class CustomAbstractTestNGCucumberTests {
      * */
     
     private ArrayList<Object[]> filterTheFeature(Object[][] data) {
-		List<String> featureList = Arrays.asList("Web Element Functions","Working with Java Script Popup");
+    	String featureValue = System.getProperty("FeatureName");
+    	
+    	if(featureValue == null || featureValue.isEmpty()){
+    		return getFeatureList(data);
+    	}
+    	
+    	List<String> featureList = Arrays.asList(featureValue.split(","));
 		//List<String> featureList = Arrays.asList("Web Element Functions","Working with Java Script Popup");
 		ArrayList<Object[]> modifiedList = new ArrayList<>();
 		
@@ -84,6 +90,16 @@ public class CustomAbstractTestNGCucumberTests {
 			}
 		}
 		return modifiedList;
+	}
+    
+    private ArrayList<Object[]> getFeatureList(Object[][] data) {
+    	ArrayList<Object[]> modifiedList = new ArrayList<>();
+    	if(data != null){
+			for (int i = 0; i < data.length; i++) {
+					modifiedList.add(data[i]);
+			}
+		}
+    	return modifiedList;
 	}
      
     @AfterClass(alwaysRun = true)

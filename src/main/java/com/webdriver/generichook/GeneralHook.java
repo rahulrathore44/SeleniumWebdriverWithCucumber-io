@@ -4,9 +4,9 @@ import org.openqa.selenium.WebDriver;
 
 import com.webdriver.services.DriverServices;
 
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
+import io.cucumber.core.api.Scenario;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 
 public class GeneralHook {
 	

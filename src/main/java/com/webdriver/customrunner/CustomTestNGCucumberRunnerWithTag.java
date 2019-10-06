@@ -1,40 +1,18 @@
 package com.webdriver.customrunner;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import cucumber.api.testng.CucumberExceptionWrapper;
-import cucumber.api.testng.CucumberFeatureWrapper;
-import cucumber.api.testng.CucumberFeatureWrapperImpl;
-import cucumber.api.testng.FeatureResultListener;
-import cucumber.api.testng.TestNgReporter;
-import cucumber.runtime.ClassFinder;
-import cucumber.runtime.CucumberException;
-import cucumber.runtime.Runtime;
-import cucumber.runtime.RuntimeOptions;
-import cucumber.runtime.RuntimeOptionsFactory;
-import cucumber.runtime.io.MultiLoader;
-import cucumber.runtime.io.ResourceLoader;
-import cucumber.runtime.io.ResourceLoaderClassFinder;
-import cucumber.runtime.model.CucumberFeature;
-import gherkin.formatter.Formatter;
-import gherkin.formatter.model.Tag;
-
 public class CustomTestNGCucumberRunnerWithTag {
 	
-	 private Runtime runtime;
+	 /*private Runtime runtime;
 	    private RuntimeOptions runtimeOptions;
 	    private ResourceLoader resourceLoader;
 	    private FeatureResultListener resultListener;
 	    private ClassLoader classLoader;
 
-	    /**
+	    *//**
 	     * Bootstrap the cucumber runtime
 	     *
 	     * @param clazz Which has the cucumber.api.CucumberOptions and org.testng.annotations.Test annotations
-	     */
+	     *//*
 	    public CustomTestNGCucumberRunnerWithTag(Class clazz) {
 	        classLoader = clazz.getClassLoader();
 	        resourceLoader = new MultiLoader(classLoader);
@@ -59,9 +37,9 @@ public class CustomTestNGCucumberRunnerWithTag {
 			
 		}
 
-		/**
+		*//**
 	     * Run the Cucumber features
-	     */
+	     *//*
 	    public void runCukes() {
 	        for (CucumberFeature cucumberFeature : getFeatures()) {
 	            cucumberFeature.run(
@@ -95,23 +73,23 @@ public class CustomTestNGCucumberRunnerWithTag {
 	        runtime.printSummary();
 	    }
 
-	    /**
+	    *//**
 	     * @return List of detected cucumber features
-	     */
+	     *//*
 	    
-	    /**
+	    *//**
 	     * Map<featuename,featureObject>
 	     * 
-	     * */
+	     * *//*
 	    
 	    public List<CucumberFeature> getFeatures() {
 	    	//List<CucumberFeature> modifiedList = getModifiedFeatureList();
-	    	/*for (CucumberFeature cucumberFeature : featureList) {
+	    	for (CucumberFeature cucumberFeature : featureList) {
 				if(value.equalsIgnoreCase(cucumberFeature.getGherkinFeature().getName())){
 					System.out.println( " Got the Object" );
 					modifiedList.add(cucumberFeature);
 				}
-			}*/
+			}
 	    	
 	        return runtimeOptions.cucumberFeatures(resourceLoader);
 	    }
@@ -159,10 +137,10 @@ public class CustomTestNGCucumberRunnerWithTag {
 	    	return modifiedList;
 	    }
 
-		/**
+		*//**
 	     * @return returns the cucumber features as a two dimensional array of
 	     * {@link CucumberFeatureWrapper} objects.
-	     */
+	     *//*
 	    public Object[][] provideFeatures() {
 	        try {
 	            List<CucumberFeature> features = getFeatures();
@@ -174,6 +152,6 @@ public class CustomTestNGCucumberRunnerWithTag {
 	        } catch (CucumberException e) {
 	            return new Object[][]{new Object[]{new CucumberExceptionWrapper(e)}};
 	        }
-	    }
+	    }*/
 
 }

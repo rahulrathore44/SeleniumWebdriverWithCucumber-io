@@ -12,13 +12,11 @@ import com.webdriver.page.EnterBugClass;
 import com.webdriver.page.HomePageClass;
 import com.webdriver.page.LoginPageClass;
 import com.webdriver.services.DriverServices;
-import com.webdriver.transform.ExcelDataToDataTable;
 import com.webdriver.utils.TestSettings;
 
-import cucumber.api.DataTable;
-import cucumber.api.Transform;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 public class DataDrivenStepDfn {
 	
@@ -72,11 +70,12 @@ public class DataDrivenStepDfn {
 	}
 	
 	@Then("^DataDriven_I provide the following information in the detail page from excel file \"([^\"]*)\"$")
-	public void datadriven_i_provide_the_following_information_in_the_detail_page_from_excel_file(@Transform(ExcelDataToDataTable.class)DataTable table) throws Throwable {
-		List<Map<String, String>> dataList = table.asMaps(String.class, String.class);
+	public void datadriven_i_provide_the_following_information_in_the_detail_page_from_excel_file(DataTable table) throws Throwable {
+		//@Transform(ExcelDataToDataTable.class)
+		/*List<Map<String, String>> dataList = table.asMaps(String.class, String.class);
 		Map<String, String> dataMap = dataList.get(0);
 		testSettings.detailPage.provideDetails(dataMap.get("Component"), dataMap.get("Version"), dataMap.get("Severity"), dataMap.get("Hardware"));
-		testSettings.detailPage.provideOtherDetails(dataMap.get("Operating"), dataMap.get("Summary"), dataMap.get("Description"));
+		testSettings.detailPage.provideOtherDetails(dataMap.get("Operating"), dataMap.get("Summary"), dataMap.get("Description"));*/
 	}
 	
 	@Then("^DataDriven_I provide the details as component as \"([^\"]*)\" version as \"([^\"]*)\" severity as \"([^\"]*)\" hardware as \"([^\"]*)\"$")

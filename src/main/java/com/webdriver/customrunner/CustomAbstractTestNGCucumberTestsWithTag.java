@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import cucumber.api.testng.CucumberFeatureWrapper;
 
 public class CustomAbstractTestNGCucumberTestsWithTag {
-	private CustomTestNGCucumberRunnerWithTag testNGCucumberRunner;
+	/*private CustomTestNGCucumberRunnerWithTag testNGCucumberRunner;
 
     @BeforeClass(alwaysRun = true)
     public void setUpClass() throws Exception {
@@ -20,9 +20,9 @@ public class CustomAbstractTestNGCucumberTestsWithTag {
         testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
     }
 
-    /**
+    *//**
      * @return returns two dimensional array of {@link CucumberFeatureWrapper} objects.
-     */
+     *//*
     @DataProvider
     public Object[][] features() {
         return testNGCucumberRunner.provideFeatures();
@@ -31,6 +31,6 @@ public class CustomAbstractTestNGCucumberTestsWithTag {
     @AfterClass(alwaysRun = true)
     public void tearDownClass() throws Exception {
         testNGCucumberRunner.finish();
-    }
+    }*/
 
 }

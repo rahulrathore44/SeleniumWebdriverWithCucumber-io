@@ -5,7 +5,8 @@ import org.openqa.selenium.WebDriver;
 import com.webdriver.services.DriverServices;
 import com.webdriver.utils.TestSettings;
 
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Then;
+
 
 public class BugCreationTestProductStepDfnTwo {
 	

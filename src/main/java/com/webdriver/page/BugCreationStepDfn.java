@@ -1,14 +1,17 @@
 package com.webdriver.page;
 
+import static org.testng.Assert.fail;
+
 import org.openqa.selenium.WebDriver;
-import static org.testng.Assert.*;
 
 import com.webdriver.page.factory.PageName;
 import com.webdriver.services.DriverServices;
 import com.webdriver.utils.TestSettings;
 
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+
+
 
 public class BugCreationStepDfn {
 	

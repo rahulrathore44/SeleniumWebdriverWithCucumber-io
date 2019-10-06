@@ -1,13 +1,14 @@
 package com.webdriver.browserfunction;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		features = {"src/main/java/com/webdriver/browserfunction/BrowserFunction.feature"},
 		glue = {"com.webdriver.browserfunction"},
 		dryRun = false,
-		monochrome = true
+		monochrome = true,
+		strict = true
 		)
 public class BrowserFunctionRunner extends AbstractTestNGCucumberTests {
 

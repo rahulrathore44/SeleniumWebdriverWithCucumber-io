@@ -2,7 +2,8 @@ package com.webdriver.runner;
 
 import com.webdriver.customrunner.CustomAbstractTestNGCucumberTestsWithTag;
 
-import cucumber.api.CucumberOptions;
+import io.cucumber.testng.CucumberOptions;
+
 
 @CucumberOptions(
 		features = {"src/main/java/com/webdriver"},

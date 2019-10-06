@@ -1,27 +1,9 @@
 package com.webdriver.transform;
 
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Locale;
+public class ExcelDataToDataTable  {
 
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-
-import com.webdriver.excelreader.ExcelReader;
-import com.webdriver.utils.ResourceUtils;
-
-import cucumber.api.DataTable;
-import cucumber.api.Transformer;
-import cucumber.runtime.ParameterInfo;
-import cucumber.runtime.table.TableConverter;
-import cucumber.runtime.xstream.LocalizedXStreams;
-import gherkin.formatter.model.Comment;
-import gherkin.formatter.model.DataTableRow;
-
-public class ExcelDataToDataTable extends Transformer<DataTable> {
-
-	@Override
+	//extends Transformer<DataTable>
+	/*@Override
 	public DataTable transform(String filename) {
 		String path = getFilePath(filename);
 		ExcelReader reader = new ExcelReader.ExcelReaderBuilder()
@@ -77,6 +59,6 @@ public class ExcelDataToDataTable extends Transformer<DataTable> {
 			throw new RuntimeException(e.getMessage());
 		}
 		return excelData;
-	}
+	}*/
 
 }

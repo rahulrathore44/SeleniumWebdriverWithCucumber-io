@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 06 15:46:59 PDT 2019</td>
+<td>Started on:</td><td>Sun Oct 06 23:03:57 PDT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>116 seconds (116353 ms)</td>
+<tr><td>Total time:</td><td>155 seconds (155921 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,8 +75,8 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with drop down - Combo box", "Web Element Functions"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#month&quot;}
+<td title='com.webdriver.runner.CustomGenericRunnerWithTag.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunnerWithTag<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Web driver wait - fixed wait", "Web driver wait fuction"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;Log In&apos;]&quot;}
   (Session info: chrome=77.0.3865.75)
   (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -85,8 +85,74 @@ Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: 
 System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\rathr1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.75, webStorageEnabled: true}
-Session ID: 80069875df655558231822ff116e2141
-*** Element info: {Using=css selector, value=#month}
+Session ID: 9b36d5d2df4e79e4d2b5a0147032690d
+*** Element info: {Using=xpath, value=//input[@value=&apos;Log In&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.webdriver.helper.ButtonHelper.click(ButtonHelper.java:22)
+	at com.webdriver.wait.WebdriverWaitStepDfn.webdriverwaitfunction_i_click_on_login_button(WebdriverWaitStepDfn.java:84)
+	at ?.WebdriverWaitFunction_I click on login button(file:src/main/java/com/webdriver/wait/WebdriverWaitFunction.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1266435158", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1266435158'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;Log In&apos;]&quot;}
+  (Session info: chrome=77.0.3865.75)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\rathr1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.75, webStorageEnabled: true}
+Session ID: 9b36d5d2df4e79e4d2b5a0147032690d
+*** Element info: {Using=xpath, value=//input[@value=&apos;Log In&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.webdriver.helper.ButtonHelper.click(ButtonHelper.java:22)
+	at com.webdriver.wait.WebdriverWaitStepDfn.webdriverwaitfunction_i_click_on_login_button(WebdriverWaitStepDfn.java:84)
+	at ?.WebdriverWaitFunction_I click on login button(file:src/main/java/com/webdriver/wait/WebdriverWaitFunction.feature:11)
+</pre></div></td>
+<td>16</td>
+<td>com.webdriver.runner.CustomGenericRunnerWithTag@52e6fdee</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunnerWithTag.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunnerWithTag<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with text box", "Web Element Functions"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#email&quot;}
+  (Session info: chrome=77.0.3865.75)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\rathr1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.75, webStorageEnabled: true}
+Session ID: b10d18773a5d671e7f46d893dbaed31e
+*** Element info: {Using=css selector, value=#email}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -103,11 +169,11 @@ Session ID: 80069875df655558231822ff116e2141
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:465)
 	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at com.webdriver.helper.DropdownHelper.selectByVisibleText(DropdownHelper.java:30)
-	at com.webdriver.webelementfunction.WebElementStepDfn.webelementfunction_i_call_select_by_visible_text_on_dropdown_it_should_select_the_value_based_on_ui(WebElementStepDfn.java:133)
-	at ?.WebElementFunction_I call select by visible text on dropdown it should select the value based on ui(file:src/main/java/com/webdriver/webelementfunction/WebelementFunction.feature:32)
-</pre></div><a href='#' onClick='toggleBox("stack-trace711483066", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace711483066'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#month&quot;}
+	at com.webdriver.helper.TextBoxHelper.setText(TextBoxHelper.java:24)
+	at com.webdriver.webelementfunction.WebElementStepDfn.webelementfunction_i_call_the_send_keys_api_with_value_it_should_type_in_the_textbox(WebElementStepDfn.java:80)
+	at ?.WebElementFunction_I call the send keys api with value &quot;abc.com&quot; it should type in the textbox(file:src/main/java/com/webdriver/webelementfunction/WebelementFunction.feature:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace590884726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace590884726'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#email&quot;}
   (Session info: chrome=77.0.3865.75)
   (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -116,8 +182,8 @@ Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: 
 System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\rathr1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.75, webStorageEnabled: true}
-Session ID: 80069875df655558231822ff116e2141
-*** Element info: {Using=css selector, value=#month}
+Session ID: b10d18773a5d671e7f46d893dbaed31e
+*** Element info: {Using=css selector, value=#email}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -134,12 +200,78 @@ Session ID: 80069875df655558231822ff116e2141
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:465)
 	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at com.webdriver.helper.DropdownHelper.selectByVisibleText(DropdownHelper.java:30)
-	at com.webdriver.webelementfunction.WebElementStepDfn.webelementfunction_i_call_select_by_visible_text_on_dropdown_it_should_select_the_value_based_on_ui(WebElementStepDfn.java:133)
-	at ?.WebElementFunction_I call select by visible text on dropdown it should select the value based on ui(file:src/main/java/com/webdriver/webelementfunction/WebelementFunction.feature:32)
+	at com.webdriver.helper.TextBoxHelper.setText(TextBoxHelper.java:24)
+	at com.webdriver.webelementfunction.WebElementStepDfn.webelementfunction_i_call_the_send_keys_api_with_value_it_should_type_in_the_textbox(WebElementStepDfn.java:80)
+	at ?.WebElementFunction_I call the send keys api with value &quot;abc.com&quot; it should type in the textbox(file:src/main/java/com/webdriver/webelementfunction/WebelementFunction.feature:19)
+</pre></div></td>
+<td>6</td>
+<td>com.webdriver.runner.CustomGenericRunnerWithTag@52e6fdee</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunnerWithTag.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunnerWithTag<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with Button,CheckBox Hyperlink and Radio Button", "Web Element Functions"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-testid=&apos;royal_login_button&apos;]&quot;}
+  (Session info: chrome=77.0.3865.75)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\rathr1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.75, webStorageEnabled: true}
+Session ID: a2289afd54c7b342ee3a849e7cc65398
+*** Element info: {Using=css selector, value=[data-testid=&apos;royal_login_button&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:465)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.webdriver.helper.ButtonHelper.click(ButtonHelper.java:22)
+	at com.webdriver.webelementfunction.WebElementStepDfn.webelementfunction_i_the_click_method_on_button_it_should_perform_the_click_action_on_button(WebElementStepDfn.java:103)
+	at ?.WebElementFunction_I the click method on button it should perform the click action on button(file:src/main/java/com/webdriver/webelementfunction/WebelementFunction.feature:26)
+</pre></div><a href='#' onClick='toggleBox("stack-trace411787317", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace411787317'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-testid=&apos;royal_login_button&apos;]&quot;}
+  (Session info: chrome=77.0.3865.75)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\rathr1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.75, webStorageEnabled: true}
+Session ID: a2289afd54c7b342ee3a849e7cc65398
+*** Element info: {Using=css selector, value=[data-testid=&apos;royal_login_button&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:465)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.webdriver.helper.ButtonHelper.click(ButtonHelper.java:22)
+	at com.webdriver.webelementfunction.WebElementStepDfn.webelementfunction_i_the_click_method_on_button_it_should_perform_the_click_action_on_button(WebElementStepDfn.java:103)
+	at ?.WebElementFunction_I the click method on button it should perform the click action on button(file:src/main/java/com/webdriver/webelementfunction/WebelementFunction.feature:26)
 </pre></div></td>
 <td>7</td>
-<td>com.webdriver.runner.CustomGenericRunner@52e6fdee</td></tr>
+<td>com.webdriver.runner.CustomGenericRunnerWithTag@52e6fdee</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -149,45 +281,15 @@ Session ID: 80069875df655558231822ff116e2141
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Handling Alerts", "Working with Java Script Popup"</td>
+<td title='com.webdriver.runner.CustomGenericRunnerWithTag.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunnerWithTag<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Web driver wait - Implicit wait", "Web driver wait fuction"</td>
 <td></td>
-<td>14</td>
-<td>com.webdriver.runner.CustomGenericRunner@52e6fdee</td></tr>
+<td>12</td>
+<td>com.webdriver.runner.CustomGenericRunnerWithTag@52e6fdee</td></tr>
 <tr>
-<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with confirmation popup", "Working with Java Script Popup"</td>
+<td title='com.webdriver.runner.CustomGenericRunnerWithTag.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunnerWithTag<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Web driver wait - Dynamic wait", "Web driver wait fuction"</td>
 <td></td>
-<td>13</td>
-<td>com.webdriver.runner.CustomGenericRunner@52e6fdee</td></tr>
-<tr>
-<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with prompt", "Working with Java Script Popup"</td>
-<td></td>
-<td>13</td>
-<td>com.webdriver.runner.CustomGenericRunner@52e6fdee</td></tr>
-<tr>
-<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with Bootstrap popup", "Working with Java Script Popup"</td>
-<td></td>
-<td>14</td>
-<td>com.webdriver.runner.CustomGenericRunner@52e6fdee</td></tr>
-<tr>
-<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Webelement Function for single element", "Web Element Functions"</td>
-<td></td>
-<td>7</td>
-<td>com.webdriver.runner.CustomGenericRunner@52e6fdee</td></tr>
-<tr>
-<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Webelement Function for multiple elements", "Web Element Functions"</td>
-<td></td>
-<td>7</td>
-<td>com.webdriver.runner.CustomGenericRunner@52e6fdee</td></tr>
-<tr>
-<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with text box", "Web Element Functions"</td>
-<td></td>
-<td>7</td>
-<td>com.webdriver.runner.CustomGenericRunner@52e6fdee</td></tr>
-<tr>
-<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with Button,CheckBox Hyperlink and Radio Button", "Web Element Functions"</td>
-<td></td>
-<td>10</td>
-<td>com.webdriver.runner.CustomGenericRunner@52e6fdee</td></tr>
+<td>11</td>
+<td>com.webdriver.runner.CustomGenericRunnerWithTag@52e6fdee</td></tr>
 </table><p>
 </body>
 </html>

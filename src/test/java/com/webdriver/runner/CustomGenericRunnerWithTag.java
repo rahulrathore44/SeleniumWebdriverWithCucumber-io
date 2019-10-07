@@ -1,6 +1,6 @@
 package com.webdriver.runner;
 
-import com.webdriver.customrunner.CustomAbstractTestNGCucumberTestsWithTag;
+import com.webdriver.io.customrunner.CustomAbstractTestNGCucumberTestsWithTag;
 
 import io.cucumber.testng.CucumberOptions;
 

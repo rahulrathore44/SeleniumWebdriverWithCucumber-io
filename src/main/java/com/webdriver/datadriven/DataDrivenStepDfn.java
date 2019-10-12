@@ -78,6 +78,15 @@ public class DataDrivenStepDfn {
 		testSettings.detailPage.provideOtherDetails(dataMap.get("Operating"), dataMap.get("Summary"), dataMap.get("Description"));*/
 	}
 	
+	@Then("DataDriven_I provide the following information in the detail page from excel file as follow")
+	public void datadriven_i_provide_the_following_information_in_the_detail_page_from_excel_file_as_follow(io.cucumber.datatable.DataTable dataTable) {
+	   List<Excel> excelList =  dataTable.asList(Excel.class);
+	   Excel excel = excelList.get(0);
+	   List<List<String>> excelData = excel.getExcelData();
+	   testSettings.detailPage.provideDetails(excelData.get(1).get(0), excelData.get(1).get(1),excelData.get(1).get(2), excelData.get(1).get(3));
+		testSettings.detailPage.provideOtherDetails(excelData.get(1).get(4), excelData.get(1).get(5), excelData.get(1).get(6));
+	}
+	
 	@Then("^DataDriven_I provide the details as component as \"([^\"]*)\" version as \"([^\"]*)\" severity as \"([^\"]*)\" hardware as \"([^\"]*)\"$")
 	public void datadriven_i_provide_the_details_as_component_as_version_as_severity_as_hardware_as(String component, String version, String severity, String hardware) throws Throwable {
 		testSettings.detailPage.provideDetails(component,version, severity, hardware);

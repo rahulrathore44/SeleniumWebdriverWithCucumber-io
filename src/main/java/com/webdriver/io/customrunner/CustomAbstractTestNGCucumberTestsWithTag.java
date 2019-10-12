@@ -4,12 +4,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import cucumber.deps.difflib.DiffRow.Tag;
 import gherkin.pickles.PickleTag;
 import io.cucumber.testng.CucumberFeatureWrapper;
 import io.cucumber.testng.PickleEventWrapper;
@@ -95,11 +99,13 @@ public class CustomAbstractTestNGCucumberTestsWithTag {
 	}
     
     private boolean isTagPresent(String aTag,List<PickleTag> aTagList) {
-		for (PickleTag pickleTag : aTagList) {
-			if(aTag.equalsIgnoreCase(pickleTag.getName()))
-				return true;
-		}
-		return false;
+    	
+    	return aTagList.stream().filter(new Predicate<PickleTag>() {
+			@Override
+			public boolean test(PickleTag t) {
+				return aTag.equalsIgnoreCase(t.getName());
+			}
+		}).collect(Collectors.toList()).isEmpty();
 	}
     
     private ArrayList<Object[]> getFeatureList(Object[][] data) {

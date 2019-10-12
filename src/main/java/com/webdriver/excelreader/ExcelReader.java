@@ -72,7 +72,7 @@ public class ExcelReader {
 		try {
 			sheet = getWorkBookSheet(fileName, sheetName);
 			outerList = getSheetData(sheet);
-		} catch (InvalidFormatException e) {
+		} catch (Exception e) {
 			throw new RuntimeException(e.getMessage());
 		}finally {
 			this.book.close();
@@ -88,10 +88,11 @@ public class ExcelReader {
 		try {
 			sheet = getWorkBookSheet(fileName, sheetIndex);
 			outerList = getSheetData(sheet);
-		} catch (InvalidFormatException e) {
+		} catch (Exception e) {
 			throw new RuntimeException(e.getMessage());
 		}finally {
-			this.book.close();
+			if(this.book != null)
+				this.book.close();
 		}
 		return outerList;
 	}

@@ -8,6 +8,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import com.sun.org.apache.regexp.internal.recompile;
+
 public class GenericHelper {
 	
 	private static GenericHelper genericHelper;
@@ -23,7 +25,7 @@ public class GenericHelper {
 		return genericHelper;
 	}
 	
-	public void takeScrenShot(String aDir,String bFileName){
+	public String takeScrenShot(String aDir,String bFileName){
 		/*
 		 * If dir is present , then save the screen shot in the given dir
 		 * Create the dir, take the screen shot and save the screen shot in the dir
@@ -36,12 +38,20 @@ public class GenericHelper {
 		if(!directory.exists())
 			directory.mkdirs();
 		
+		String aPath = directory.getAbsolutePath() + File.separator + bFileName;
+		
+		return takeScreenShot(aPath);
+	}
+
+	public String takeScreenShot(String aPath) {
 		File screenshot = ((TakesScreenshot)wdDriver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(screenshot, new File(directory.getAbsolutePath() + File.separator + bFileName));
+			FileUtils.copyFile(screenshot, new File(aPath));
 		} catch (IOException e) {
 			e.printStackTrace();
+			return "";
 		}
+		return aPath;
 	}
 	
 	public byte[] takeScrenShot(){

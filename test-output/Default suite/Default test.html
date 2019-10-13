@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>25/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 10 20:39:14 PDT 2019</td>
+<td>Started on:</td><td>Sat Oct 12 20:45:26 PDT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>150 seconds (150515 ms)</td>
+<tr><td>Total time:</td><td>735 seconds (735792 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,358 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Data Driven using scenario outline", "Data Driven Testing"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: log_in&apos; (tried for 60 second(s) with 250 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.webdriver.page.HomePageClass.navigateToLoginPage(HomePageClass.java:42)
+	at com.webdriver.datadriven.DataDrivenStepDfn.datadriven_i_click_on_File_a_bug_link_and_navigate_to_login_page(DataDrivenStepDfn.java:42)
+	at ?.DataDriven_I click on File a bug link and navigate to login page(file:src/main/java/com/webdriver/datadriven/DataDriven.feature:33)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;log_in&quot;}
+  (Session info: chrome=77.0.3865.75)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\rathr1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.75, webStorageEnabled: true}
+Session ID: 4471731d4cd2c410dee478ab3fead81f
+*** Element info: {Using=id, value=log_in}
+	at sun.reflect.GeneratedConstructorAccessor25.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy22.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:672)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:668)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.webdriver.page.HomePageClass.navigateToLoginPage(HomePageClass.java:42)
+	at com.webdriver.datadriven.DataDrivenStepDfn.datadriven_i_click_on_File_a_bug_link_and_navigate_to_login_page(DataDrivenStepDfn.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:46)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
+	at com.webdriver.io.customrunner.CustomAbstractTestNGCucumberTests.runScenario(CustomAbstractTestNGCucumberTests.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace736631002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace736631002'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: log_in&apos; (tried for 60 second(s) with 250 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.webdriver.page.HomePageClass.navigateToLoginPage(HomePageClass.java:42)
+	at com.webdriver.datadriven.DataDrivenStepDfn.datadriven_i_click_on_File_a_bug_link_and_navigate_to_login_page(DataDrivenStepDfn.java:42)
+	at ?.DataDriven_I click on File a bug link and navigate to login page(file:src/main/java/com/webdriver/datadriven/DataDriven.feature:33)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;log_in&quot;}
+  (Session info: chrome=77.0.3865.75)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\rathr1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.75, webStorageEnabled: true}
+Session ID: 4471731d4cd2c410dee478ab3fead81f
+*** Element info: {Using=id, value=log_in}
+	at sun.reflect.GeneratedConstructorAccessor25.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy22.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:672)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:668)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.webdriver.page.HomePageClass.navigateToLoginPage(HomePageClass.java:42)
+	at com.webdriver.datadriven.DataDrivenStepDfn.datadriven_i_click_on_File_a_bug_link_and_navigate_to_login_page(DataDrivenStepDfn.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:46)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
+	at com.webdriver.io.customrunner.CustomAbstractTestNGCucumberTests.runScenario(CustomAbstractTestNGCucumberTests.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>199</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Bug Creation", "Create bug in bugzila application"</td>
+<td><div><pre>java.lang.AssertionError: To Take the Screen Shot
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.webdriver.page.BugCreationStepDfn.bugzilla_the_title_of_login_page_should_be(BugCreationStepDfn.java:58)
+	at ?.Bugzilla_The title of login page should be &quot;Log in to Bugzilla&quot;(file:src/main/java/com/webdriver/page/BugCreation.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace259144923", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace259144923'><pre>java.lang.AssertionError: To Take the Screen Shot
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.webdriver.page.BugCreationStepDfn.bugzilla_the_title_of_login_page_should_be(BugCreationStepDfn.java:58)
+	at ?.Bugzilla_The title of login page should be &quot;Log in to Bugzilla&quot;(file:src/main/java/com/webdriver/page/BugCreation.feature:6)
+</pre></div></td>
+<td>10</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Web driver wait - Dynamic wait", "Web driver wait fuction"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.webdriver.wait.WebdriverWaitStepDfn$3@bb3ecfe (tried for 60 second(s) with 250 MILLISECONDS interval)
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\rathr1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.75, webStorageEnabled: true}
+Session ID: f7b9d3874141d3fa068a7f3bf6b7069f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.webdriver.wait.WebdriverWaitStepDfn.webdriverwaitfunction_i_provide_the_dynamic_wait_with_polling_duration_as_ms_and_timeout_duration_as_sec(WebdriverWaitStepDfn.java:73)
+	at ?.WebdriverWaitFunction_I provide the dynamic wait with polling duration as 250 ms and timeout duration as 60 sec(file:src/main/java/com/webdriver/wait/WebdriverWaitFunction.feature:22)
+</pre></div><a href='#' onClick='toggleBox("stack-trace569235601", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace569235601'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.webdriver.wait.WebdriverWaitStepDfn$3@bb3ecfe (tried for 60 second(s) with 250 MILLISECONDS interval)
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\rathr1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.75, webStorageEnabled: true}
+Session ID: f7b9d3874141d3fa068a7f3bf6b7069f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.webdriver.wait.WebdriverWaitStepDfn.webdriverwaitfunction_i_provide_the_dynamic_wait_with_polling_duration_as_ms_and_timeout_duration_as_sec(WebdriverWaitStepDfn.java:73)
+	at ?.WebdriverWaitFunction_I provide the dynamic wait with polling duration as 250 ms and timeout duration as 60 sec(file:src/main/java/com/webdriver/wait/WebdriverWaitFunction.feature:22)
+</pre></div></td>
+<td>71</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with Button,CheckBox Hyperlink and Radio Button", "Web Element Functions"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Create a Page&quot;}
+  (Session info: chrome=77.0.3865.75)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\rathr1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.75, webStorageEnabled: true}
+Session ID: 61f1e5842df6a2356fab266bbe726b89
+*** Element info: {Using=link text, value=Create a Page}
+	at sun.reflect.GeneratedConstructorAccessor25.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.webdriver.helper.ButtonHelper.click(ButtonHelper.java:22)
+	at com.webdriver.webelementfunction.WebElementStepDfn.webelementfunction_i_call_the_click_method_on_hyper_link_it_shoulc_click_on_the_hyper_link(WebElementStepDfn.java:121)
+	at ?.WebElementFunction_I call the click method on hyper link it shoulc click on the hyper link(file:src/main/java/com/webdriver/webelementfunction/WebelementFunction.feature:28)
+</pre></div><a href='#' onClick='toggleBox("stack-trace942502343", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace942502343'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Create a Page&quot;}
+  (Session info: chrome=77.0.3865.75)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\rathr1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.75, webStorageEnabled: true}
+Session ID: 61f1e5842df6a2356fab266bbe726b89
+*** Element info: {Using=link text, value=Create a Page}
+	at sun.reflect.GeneratedConstructorAccessor25.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.webdriver.helper.ButtonHelper.click(ButtonHelper.java:22)
+	at com.webdriver.webelementfunction.WebElementStepDfn.webelementfunction_i_call_the_click_method_on_hyper_link_it_shoulc_click_on_the_hyper_link(WebElementStepDfn.java:121)
+	at ?.WebElementFunction_I call the click method on hyper link it shoulc click on the hyper link(file:src/main/java/com/webdriver/webelementfunction/WebelementFunction.feature:28)
+</pre></div></td>
+<td>10</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with drop down - Combo box", "Web Element Functions"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#month&quot;}
+  (Session info: chrome=77.0.3865.75)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\rathr1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.75, webStorageEnabled: true}
+Session ID: 31ca5b8330338c2f9b169b0df582802a
+*** Element info: {Using=css selector, value=#month}
+	at sun.reflect.GeneratedConstructorAccessor25.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:465)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.webdriver.helper.DropdownHelper.selectByVisibleText(DropdownHelper.java:30)
+	at com.webdriver.webelementfunction.WebElementStepDfn.webelementfunction_i_call_select_by_visible_text_on_dropdown_it_should_select_the_value_based_on_ui(WebElementStepDfn.java:133)
+	at ?.WebElementFunction_I call select by visible text on dropdown it should select the value based on ui(file:src/main/java/com/webdriver/webelementfunction/WebelementFunction.feature:32)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2084912180", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2084912180'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#month&quot;}
+  (Session info: chrome=77.0.3865.75)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\rathr1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 77.0.3865.75, webStorageEnabled: true}
+Session ID: 31ca5b8330338c2f9b169b0df582802a
+*** Element info: {Using=css selector, value=#month}
+	at sun.reflect.GeneratedConstructorAccessor25.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:465)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.webdriver.helper.DropdownHelper.selectByVisibleText(DropdownHelper.java:30)
+	at com.webdriver.webelementfunction.WebElementStepDfn.webelementfunction_i_call_select_by_visible_text_on_dropdown_it_should_select_the_value_based_on_ui(WebElementStepDfn.java:133)
+	at ?.WebElementFunction_I call select by visible text on dropdown it should select the value based on ui(file:src/main/java/com/webdriver/webelementfunction/WebelementFunction.feature:32)
+</pre></div></td>
+<td>8</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,10 +427,130 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.webdriver.datadriven.DataDrivenRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.datadriven.DataDrivenRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Data Driven using Excel file", "Data Driven Testing"</td>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Handling Alerts", "Working with Java Script Popup"</td>
 <td></td>
-<td>150</td>
-<td>com.webdriver.datadriven.DataDrivenRunner@661972b0</td></tr>
+<td>16</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with confirmation popup", "Working with Java Script Popup"</td>
+<td></td>
+<td>14</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with prompt", "Working with Java Script Popup"</td>
+<td></td>
+<td>16</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with Bootstrap popup", "Working with Java Script Popup"</td>
+<td></td>
+<td>31</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Browser Function", "Browser Function"</td>
+<td></td>
+<td>7</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Browser Function Open Webpage", "Browser Function"</td>
+<td></td>
+<td>9</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Browser Function Back, Forward and Refresh", "Browser Function"</td>
+<td></td>
+<td>13</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Browser Function Maximize browse window while launching", "Browser Function"</td>
+<td></td>
+<td>9</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with context click", "Working with Mouse and Keyboard actions"</td>
+<td></td>
+<td>18</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with drang and drop action", "Working with Mouse and Keyboard actions"</td>
+<td></td>
+<td>9</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with click and hold action", "Working with Mouse and Keyboard actions"</td>
+<td></td>
+<td>7</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with Keyboard action", "Working with Mouse and Keyboard actions"</td>
+<td></td>
+<td>8</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Data Driven using Data Table", "Data Driven Testing"</td>
+<td></td>
+<td>29</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Data Driven using Excel file", "Data Driven Testing"</td>
+<td></td>
+<td>26</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Data Driven using scenario outline", "Data Driven Testing"</td>
+<td></td>
+<td>26</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Data Driven using scenario outline", "Data Driven Testing"</td>
+<td></td>
+<td>25</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on the element presetn in Iframe", "Working with Iframe"</td>
+<td></td>
+<td>15</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with MultipleWindow", "Working with Iframe"</td>
+<td></td>
+<td>20</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Bug Creation for Test Product", "Create bug in bugzila application"</td>
+<td></td>
+<td>29</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Usage of Custom Factory", "Create bug in bugzila application"</td>
+<td></td>
+<td>36</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Web driver wait - fixed wait", "Web driver wait fuction"</td>
+<td></td>
+<td>18</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Web driver wait - Implicit wait", "Web driver wait fuction"</td>
+<td></td>
+<td>15</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Webelement Function for single element", "Web Element Functions"</td>
+<td></td>
+<td>9</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Webelement Function for multiple elements", "Web Element Functions"</td>
+<td></td>
+<td>7</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
+<tr>
+<td title='com.webdriver.runner.CustomGenericRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.runner.CustomGenericRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Working with text box", "Web Element Functions"</td>
+<td></td>
+<td>9</td>
+<td>com.webdriver.runner.CustomGenericRunner@71809907</td></tr>
 </table><p>
 </body>
 </html>

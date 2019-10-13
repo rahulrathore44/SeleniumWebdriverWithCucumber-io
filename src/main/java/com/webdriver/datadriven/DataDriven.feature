@@ -1,6 +1,6 @@
 Feature: Data Driven Testing
 
-@Ignore
+#@Ignore
   Scenario: Data Driven using Data Table
     Given DataDriven_I am at the Bugzilla home page
     Then DataDriven_I click on File a bug link and navigate to login page
@@ -27,7 +27,7 @@ Feature: Data Driven Testing
     And DataDriven_The title should contain "Bug Summary"
     And DataDriven_I am at the summary page and I click the logout button
 
-@Ignore
+#@Ignore
   Scenario Outline: Data Driven using scenario outline
     Given DataDriven_I am at the Bugzilla home page
     Then DataDriven_I click on File a bug link and navigate to login page

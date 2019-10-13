@@ -16,6 +16,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import cucumber.api.Result;
 import cucumber.api.Scenario;
 
+@SuppressWarnings("deprecation")
 public class CustomExtentReporter {
 	
 	private ExtentHtmlReporter extentHtmlReporter;

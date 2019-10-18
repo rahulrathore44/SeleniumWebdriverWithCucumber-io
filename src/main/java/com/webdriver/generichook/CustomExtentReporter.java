@@ -10,6 +10,7 @@ import java.lang.reflect.Field;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.aventstack.extentreports.AnalysisStrategy;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
@@ -25,6 +26,7 @@ public class CustomExtentReporter {
 	public CustomExtentReporter(String reportLocation) {
 		extentHtmlReporter = new ExtentHtmlReporter(new File(reportLocation));
 		extentReports = new ExtentReports();
+		extentReports.setAnalysisStrategy(AnalysisStrategy.TEST);
 		extentReports.attachReporter(extentHtmlReporter);
 	}
 	

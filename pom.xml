@@ -52,6 +52,9 @@
 
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/ru.yandex.qatools.ashot/ashot -->
+
+
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-io</artifactId>
@@ -168,6 +171,11 @@
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>4.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>ru.yandex.qatools.ashot</groupId>
+			<artifactId>ashot</artifactId>
+			<version>1.5.3</version>
 		</dependency>
 	</dependencies>
 </project>

@@ -10,8 +10,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import io.cucumber.testng.CucumberFeatureWrapper;
-import io.cucumber.testng.PickleEventWrapper;
+import io.cucumber.testng.FeatureWrapper;
+import io.cucumber.testng.PickleWrapper;
 import io.cucumber.testng.TestNGCucumberRunner;
 
 /**
@@ -27,9 +27,9 @@ public class CustomAbstractTestNGCucumberTests {
     }
 
     @Test(groups = "cucumber", description = "Runs Cucumber Scenarios", dataProvider = "scenarios")
-    public void runScenario(PickleEventWrapper pickleWrapper, CucumberFeatureWrapper featureWrapper) throws Throwable {
+    public void runScenario(PickleWrapper pickleWrapper, FeatureWrapper featureWrapper) throws Throwable {
         // the 'featureWrapper' parameter solely exists to display the feature file in a test report
-        testNGCucumberRunner.runScenario(pickleWrapper.getPickleEvent());
+        testNGCucumberRunner.runScenario(pickleWrapper.getPickle());
     }
 
     /**
@@ -79,7 +79,7 @@ public class CustomAbstractTestNGCucumberTests {
 		
 		if(data != null){
 			for (int i = 0; i < data.length; i++) {
-				CucumberFeatureWrapper cucumberFeatureWrapper = (CucumberFeatureWrapper)data[i][1];
+				FeatureWrapper cucumberFeatureWrapper = (FeatureWrapper)data[i][1];
 				if(featureList.contains(cucumberFeatureWrapper.toString().trim().replaceAll("\"", ""))){
 					modifiedList.add(data[i]);
 					 // data[0][0] ->> PickleEventWrapper i = 0;

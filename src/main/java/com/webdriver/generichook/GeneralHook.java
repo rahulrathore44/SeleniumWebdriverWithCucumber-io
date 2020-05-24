@@ -6,9 +6,9 @@ import org.openqa.selenium.WebDriver;
 
 import com.webdriver.services.DriverServices;
 
-import cucumber.api.Scenario;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 
 @SuppressWarnings(value = "deprecation")
 public class GeneralHook {

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 17 19:02:28 PDT 2020</td>
+<td>Started on:</td><td>Sun May 24 12:43:57 PDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17548 ms)</td>
+<tr><td>Total time:</td><td>56 seconds (56677 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,40 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.webdriver.datadriven.DataDrivenRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.datadriven.DataDrivenRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Data Driven using Excel file", "Data Driven Testing"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: test1         
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:209)
+	at com.webdriver.helper.DropdownHelper.selectByValue(DropdownHelper.java:55)
+	at com.webdriver.page.DetailPageClass.provideDetails(DetailPageClass.java:62)
+	at com.webdriver.datadriven.DataDrivenStepDfn.datadriven_i_provide_the_following_information_in_the_detail_page_from_excel_file_as_follow(DataDrivenStepDfn.java:86)
+	at ?.DataDriven_I provide the following information in the detail page from excel file as follow(file:///C:/Data/GitHub/SeleniumWebdriverWithCucumber-io/src/main/java/com/webdriver/datadriven/DataDriven.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1957530885", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1957530885'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: test1         
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:209)
+	at com.webdriver.helper.DropdownHelper.selectByValue(DropdownHelper.java:55)
+	at com.webdriver.page.DetailPageClass.provideDetails(DetailPageClass.java:62)
+	at com.webdriver.datadriven.DataDrivenStepDfn.datadriven_i_provide_the_following_information_in_the_detail_page_from_excel_file_as_follow(DataDrivenStepDfn.java:86)
+	at ?.DataDriven_I provide the following information in the detail page from excel file as follow(file:///C:/Data/GitHub/SeleniumWebdriverWithCucumber-io/src/main/java/com/webdriver/datadriven/DataDriven.feature:23)
+</pre></div></td>
+<td>9</td>
+<td>com.webdriver.datadriven.DataDrivenRunner@23529fee</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,25 +109,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.webdriver.browserfunction.BrowserFunctionRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.browserfunction.BrowserFunctionRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Browser Function", "Browser Function"</td>
+<td title='com.webdriver.datadriven.DataDrivenRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.datadriven.DataDrivenRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Data Driven using Data Table", "Data Driven Testing"</td>
 <td></td>
-<td>4</td>
-<td>com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365</td></tr>
+<td>12</td>
+<td>com.webdriver.datadriven.DataDrivenRunner@23529fee</td></tr>
 <tr>
-<td title='com.webdriver.browserfunction.BrowserFunctionRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.browserfunction.BrowserFunctionRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Browser Function Open Webpage", "Browser Function"</td>
+<td title='com.webdriver.datadriven.DataDrivenRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.datadriven.DataDrivenRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Data Driven using scenario outline", "Data Driven Testing"</td>
 <td></td>
-<td>3</td>
-<td>com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365</td></tr>
+<td>11</td>
+<td>com.webdriver.datadriven.DataDrivenRunner@23529fee</td></tr>
 <tr>
-<td title='com.webdriver.browserfunction.BrowserFunctionRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.browserfunction.BrowserFunctionRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Browser Function Back, Forward and Refresh", "Browser Function"</td>
+<td title='com.webdriver.datadriven.DataDrivenRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.datadriven.DataDrivenRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Data Driven using scenario outline", "Data Driven Testing"</td>
 <td></td>
-<td>5</td>
-<td>com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365</td></tr>
+<td>11</td>
+<td>com.webdriver.datadriven.DataDrivenRunner@23529fee</td></tr>
 <tr>
-<td title='com.webdriver.browserfunction.BrowserFunctionRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.browserfunction.BrowserFunctionRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Browser Function Maximize browse window while launching", "Browser Function"</td>
+<td title='com.webdriver.datadriven.DataDrivenRunner.runScenario()'><b>runScenario</b><br>Test class: com.webdriver.datadriven.DataDrivenRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Data Driven using scenario outline", "Data Driven Testing"</td>
 <td></td>
-<td>3</td>
-<td>com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365</td></tr>
+<td>11</td>
+<td>com.webdriver.datadriven.DataDrivenRunner@23529fee</td></tr>
 </table><p>
 </body>
 </html>

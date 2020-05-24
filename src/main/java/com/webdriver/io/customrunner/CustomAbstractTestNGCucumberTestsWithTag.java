@@ -15,8 +15,8 @@ import org.testng.annotations.Test;
 
 import cucumber.deps.difflib.DiffRow.Tag;
 import gherkin.pickles.PickleTag;
-import io.cucumber.testng.CucumberFeatureWrapper;
-import io.cucumber.testng.PickleEventWrapper;
+import io.cucumber.testng.FeatureWrapper;
+import io.cucumber.testng.PickleWrapper;
 import io.cucumber.testng.TestNGCucumberRunner;
 
 /**
@@ -32,9 +32,9 @@ public class CustomAbstractTestNGCucumberTestsWithTag {
     }
 
     @Test(groups = "cucumber", description = "Runs Cucumber Scenarios", dataProvider = "scenarios")
-    public void runScenario(PickleEventWrapper pickleWrapper, CucumberFeatureWrapper featureWrapper) throws Throwable {
+    public void runScenario(PickleWrapper pickleWrapper, FeatureWrapper featureWrapper) throws Throwable {
         // the 'featureWrapper' parameter solely exists to display the feature file in a test report
-        testNGCucumberRunner.runScenario(pickleWrapper.getPickleEvent());
+        testNGCucumberRunner.runScenario(pickleWrapper.getPickle());
     }
 
     /**
@@ -84,10 +84,10 @@ public class CustomAbstractTestNGCucumberTestsWithTag {
 		
 		if(data != null){
 			for (int i = 0; i < data.length; i++) {
-				PickleEventWrapper pickleEventWrapper = (PickleEventWrapper)data[i][0];
-				if(!pickleEventWrapper.getPickleEvent().pickle.getTags().isEmpty()){
+				PickleWrapper pickleEventWrapper = (PickleWrapper)data[i][0];
+				if(!pickleEventWrapper.getPickle().getTags().isEmpty()){
 					for (String aTag : tagList) {
-						if(isTagPresent(aTag,pickleEventWrapper.getPickleEvent().pickle.getTags())){
+						if(isTagPresent(aTag,pickleEventWrapper.getPickle().getTags())){
 							modifiedList.add(data[i]);
 						}
 					}
@@ -98,12 +98,12 @@ public class CustomAbstractTestNGCucumberTestsWithTag {
 		return modifiedList;
 	}
     
-    private boolean isTagPresent(String aTag,List<PickleTag> aTagList) {
+    private boolean isTagPresent(String aTag,List<String> list) {
     	
-    	return aTagList.stream().filter(new Predicate<PickleTag>() {
+    	return list.stream().filter(new Predicate<String>() {
 			@Override
-			public boolean test(PickleTag t) {
-				return aTag.equalsIgnoreCase(t.getName());
+			public boolean test(String t) {
+				return aTag.equalsIgnoreCase(t);
 			}
 		}).collect(Collectors.toList()).isEmpty();
 	}

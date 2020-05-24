@@ -1,88 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17548" started-at="2020-04-18T02:02:28Z" finished-at="2020-04-18T02:02:46Z">
+  <suite name="Default suite" duration-ms="56677" started-at="2020-05-24T19:43:57Z" finished-at="2020-05-24T19:44:54Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.datadriven.DataDrivenRunner@23529fee]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="17548" started-at="2020-04-18T02:02:28Z" finished-at="2020-04-18T02:02:46Z">
-      <class name="com.webdriver.browserfunction.BrowserFunctionRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365]" name="setUpClass" is-config="true" duration-ms="110" started-at="2020-04-17T19:02:28Z" finished-at="2020-04-17T19:02:29Z">
+    <test name="Default test" duration-ms="56677" started-at="2020-05-24T19:43:57Z" finished-at="2020-05-24T19:44:54Z">
+      <class name="com.webdriver.datadriven.DataDrivenRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.webdriver.datadriven.DataDrivenRunner@23529fee]" name="setUpClass" is-config="true" duration-ms="222" started-at="2020-05-24T12:43:57Z" finished-at="2020-05-24T12:43:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365]" name="runScenario" duration-ms="4208" started-at="2020-04-17T19:02:29Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T19:02:33Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.datadriven.DataDrivenRunner@23529fee]" name="runScenario" duration-ms="12723" started-at="2020-05-24T12:43:57Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-24T12:44:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Browser Function"]]>
+                <![CDATA["Data Driven using Data Table"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Browser Function"]]>
+                <![CDATA["Data Driven Testing"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365]" name="runScenario" duration-ms="3502" started-at="2020-04-17T19:02:33Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T19:02:36Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.datadriven.DataDrivenRunner@23529fee]" name="runScenario" duration-ms="9280" started-at="2020-05-24T12:44:10Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-24T12:44:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Browser Function Open Webpage"]]>
+                <![CDATA["Data Driven using Excel file"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Browser Function"]]>
+                <![CDATA["Data Driven Testing"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with value: test1         For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'L33986WUS', ip: '55.55.55.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: test1         For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'L33986WUS', ip: '55.55.55.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'Driver info: driver.version: unknownat org.openqa.selenium.support.ui.Select.selectByValue(Select.java:209)at com.webdriver.helper.DropdownHelper.selectByValue(DropdownHelper.java:55)at com.webdriver.page.DetailPageClass.provideDetails(DetailPageClass.java:62)at com.webdriver.datadriven.DataDrivenStepDfn.datadriven_i_provide_the_following_information_in_the_detail_page_from_excel_file_as_follow(DataDrivenStepDfn.java:86)at ✽.DataDriven_I provide the following information in the detail page from excel file as follow(file:///C:/Data/GitHub/SeleniumWebdriverWithCucumber-io/src/main/java/com/webdriver/datadriven/DataDriven.feature:23)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.datadriven.DataDrivenRunner@23529fee]" name="runScenario" duration-ms="11984" started-at="2020-05-24T12:44:19Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-24T12:44:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Data Driven using scenario outline"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Data Driven Testing"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365]" name="runScenario" duration-ms="5710" started-at="2020-04-17T19:02:36Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T19:02:42Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.datadriven.DataDrivenRunner@23529fee]" name="runScenario" duration-ms="11113" started-at="2020-05-24T12:44:31Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-24T12:44:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Browser Function Back, Forward and Refresh"]]>
+                <![CDATA["Data Driven using scenario outline"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Browser Function"]]>
+                <![CDATA["Data Driven Testing"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365]" name="runScenario" duration-ms="3958" started-at="2020-04-17T19:02:42Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T19:02:46Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.datadriven.DataDrivenRunner@23529fee]" name="runScenario" duration-ms="11317" started-at="2020-05-24T12:44:43Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-24T12:44:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Browser Function Maximize browse window while launching"]]>
+                <![CDATA["Data Driven using scenario outline"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Browser Function"]]>
+                <![CDATA["Data Driven Testing"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365]" name="tearDownClass" is-config="true" duration-ms="2" started-at="2020-04-17T19:02:46Z" finished-at="2020-04-17T19:02:46Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.webdriver.datadriven.DataDrivenRunner@23529fee]" name="tearDownClass" is-config="true" duration-ms="3" started-at="2020-05-24T12:44:54Z" finished-at="2020-05-24T12:44:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.webdriver.browserfunction.BrowserFunctionRunner -->
+      </class> <!-- com.webdriver.datadriven.DataDrivenRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\rathr1\AppData\Local\Temp\testng-eclipse--1862972479\testng-customsuite.xml</span>
+                    <span>C:\Users\rathr1\AppData\Local\Temp\testng-eclipse--378215786\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.webdriver.datadriven.DataDrivenRunner" hash-for-method="runScenario(&quot;Data Driven using Excel file&quot;, &quot;Data Driven Testing&quot;)">runScenario("Data Driven using Excel file", "Data Driven Testing")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,22 +116,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.webdriver.browserfunction.BrowserFunctionRunner" hash-for-method="runScenario(&quot;Browser Function&quot;, &quot;Browser Function&quot;)">runScenario("Browser Function", "Browser Function")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.webdriver.datadriven.DataDrivenRunner" hash-for-method="runScenario(&quot;Data Driven using scenario outline&quot;, &quot;Data Driven Testing&quot;)">runScenario("Data Driven using scenario outline", "Data Driven Testing")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.webdriver.browserfunction.BrowserFunctionRunner" hash-for-method="runScenario(&quot;Browser Function Open Webpage&quot;, &quot;Browser Function&quot;)">runScenario("Browser Function Open Webpage", "Browser Function")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.webdriver.datadriven.DataDrivenRunner" hash-for-method="runScenario(&quot;Data Driven using scenario outline&quot;, &quot;Data Driven Testing&quot;)">runScenario("Data Driven using scenario outline", "Data Driven Testing")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.webdriver.browserfunction.BrowserFunctionRunner" hash-for-method="runScenario(&quot;Browser Function Back, Forward and Refresh&quot;, &quot;Browser Function&quot;)">runScenario("Browser Function Back, Forward and Refresh", "Browser Function")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.webdriver.datadriven.DataDrivenRunner" hash-for-method="runScenario(&quot;Data Driven using Data Table&quot;, &quot;Data Driven Testing&quot;)">runScenario("Data Driven using Data Table", "Data Driven Testing")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.webdriver.browserfunction.BrowserFunctionRunner" hash-for-method="runScenario(&quot;Browser Function Maximize browse window while launching&quot;, &quot;Browser Function&quot;)">runScenario("Browser Function Maximize browse window while launching", "Browser Function")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.webdriver.datadriven.DataDrivenRunner" hash-for-method="runScenario(&quot;Data Driven using scenario outline&quot;, &quot;Data Driven Testing&quot;)">runScenario("Data Driven using scenario outline", "Data Driven Testing")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -132,48 +146,78 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.webdriver.browserfunction.BrowserFunctionRunner</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.webdriver.datadriven.DataDrivenRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Browser Function&quot;, &quot;Browser Function&quot;)">
-                  </a> <!-- runScenario("Browser Function", "Browser Function") -->
+                  <a name="runScenario(&quot;Data Driven using Excel file&quot;, &quot;Data Driven Testing&quot;)">
+                  </a> <!-- runScenario("Data Driven using Excel file", "Data Driven Testing") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Browser Function", "Browser Function")</span>
+                  <span class="parameters">("Data Driven using Excel file", "Data Driven Testing")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with value: test1         
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;L33986WUS&apos;, ip: &apos;55.55.55.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:209)
+	at com.webdriver.helper.DropdownHelper.selectByValue(DropdownHelper.java:55)
+	at com.webdriver.page.DetailPageClass.provideDetails(DetailPageClass.java:62)
+	at com.webdriver.datadriven.DataDrivenStepDfn.datadriven_i_provide_the_following_information_in_the_detail_page_from_excel_file_as_follow(DataDrivenStepDfn.java:86)
+	at ✽.DataDriven_I provide the following information in the detail page from excel file as follow(file:///C:/Data/GitHub/SeleniumWebdriverWithCucumber-io/src/main/java/com/webdriver/datadriven/DataDriven.feature:23)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webdriver.datadriven.DataDrivenRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Data Driven using scenario outline&quot;, &quot;Data Driven Testing&quot;)">
+                  </a> <!-- runScenario("Data Driven using scenario outline", "Data Driven Testing") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Data Driven using scenario outline", "Data Driven Testing")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Browser Function Open Webpage&quot;, &quot;Browser Function&quot;)">
-                  </a> <!-- runScenario("Browser Function Open Webpage", "Browser Function") -->
+                  <a name="runScenario(&quot;Data Driven using scenario outline&quot;, &quot;Data Driven Testing&quot;)">
+                  </a> <!-- runScenario("Data Driven using scenario outline", "Data Driven Testing") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Browser Function Open Webpage", "Browser Function")</span>
+                  <span class="parameters">("Data Driven using scenario outline", "Data Driven Testing")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Browser Function Back, Forward and Refresh&quot;, &quot;Browser Function&quot;)">
-                  </a> <!-- runScenario("Browser Function Back, Forward and Refresh", "Browser Function") -->
+                  <a name="runScenario(&quot;Data Driven using Data Table&quot;, &quot;Data Driven Testing&quot;)">
+                  </a> <!-- runScenario("Data Driven using Data Table", "Data Driven Testing") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Browser Function Back, Forward and Refresh", "Browser Function")</span>
+                  <span class="parameters">("Data Driven using Data Table", "Data Driven Testing")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Browser Function Maximize browse window while launching&quot;, &quot;Browser Function&quot;)">
-                  </a> <!-- runScenario("Browser Function Maximize browse window while launching", "Browser Function") -->
+                  <a name="runScenario(&quot;Data Driven using scenario outline&quot;, &quot;Data Driven Testing&quot;)">
+                  </a> <!-- runScenario("Data Driven using scenario outline", "Data Driven Testing") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Browser Function Maximize browse window while launching", "Browser Function")</span>
+                  <span class="parameters">("Data Driven using scenario outline", "Data Driven Testing")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -183,7 +227,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\rathr1\AppData\Local\Temp\testng-eclipse--1862972479\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\rathr1\AppData\Local\Temp\testng-eclipse--378215786\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -192,7 +236,7 @@
 &lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.webdriver.browserfunction.BrowserFunctionRunner&quot;/&gt;
+      &lt;class name=&quot;com.webdriver.datadriven.DataDrivenRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -240,28 +284,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'com.webdriver.browserfunction.BrowserFunctionRunner')
-data.setCell(0, 3, 5710);
+data.setCell(0, 2, 'com.webdriver.datadriven.DataDrivenRunner')
+data.setCell(0, 3, 12723);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'com.webdriver.browserfunction.BrowserFunctionRunner')
-data.setCell(1, 3, 4208);
+data.setCell(1, 2, 'com.webdriver.datadriven.DataDrivenRunner')
+data.setCell(1, 3, 11984);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
-data.setCell(2, 2, 'com.webdriver.browserfunction.BrowserFunctionRunner')
-data.setCell(2, 3, 3958);
+data.setCell(2, 2, 'com.webdriver.datadriven.DataDrivenRunner')
+data.setCell(2, 3, 11317);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
-data.setCell(3, 2, 'com.webdriver.browserfunction.BrowserFunctionRunner')
-data.setCell(3, 3, 3502);
+data.setCell(3, 2, 'com.webdriver.datadriven.DataDrivenRunner')
+data.setCell(3, 3, 11113);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.webdriver.datadriven.DataDrivenRunner')
+data.setCell(4, 3, 9280);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 56 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -287,30 +335,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.webdriver.browserfunction.BrowserFunctionRunner</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.webdriver.datadriven.DataDrivenRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Browser Function", "Browser Function")</span>
-                <span class="method-start">154 ms</span>
+                <span class="method-name">runScenario("Data Driven using Data Table", "Data Driven Testing")</span>
+                <span class="method-start">233 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Browser Function Open Webpage", "Browser Function")</span>
-                <span class="method-start">4364 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Data Driven using Excel file", "Data Driven Testing")</span>
+                <span class="method-start">12960 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Browser Function Back, Forward and Refresh", "Browser Function")</span>
-                <span class="method-start">7867 ms</span>
+                <span class="method-name">runScenario("Data Driven using scenario outline", "Data Driven Testing")</span>
+                <span class="method-start">22244 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Browser Function Maximize browse window while launching", "Browser Function")</span>
-                <span class="method-start">13580 ms</span>
+                <span class="method-name">runScenario("Data Driven using scenario outline", "Data Driven Testing")</span>
+                <span class="method-start">34229 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Data Driven using scenario outline", "Data Driven Testing")</span>
+                <span class="method-start">45345 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">17539 ms</span>
+                <span class="method-start">56665 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

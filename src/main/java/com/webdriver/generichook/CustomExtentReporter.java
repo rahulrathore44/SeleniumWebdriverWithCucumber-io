@@ -14,10 +14,9 @@ import com.aventstack.extentreports.AnalysisStrategy;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-import cucumber.api.Result;
-import cucumber.api.Scenario;
+import io.cucumber.java.Scenario;
+import io.cucumber.plugin.event.Result;
 
-@SuppressWarnings("deprecation")
 public class CustomExtentReporter {
 	
 	private ExtentHtmlReporter extentHtmlReporter;
@@ -42,7 +41,7 @@ public class CustomExtentReporter {
 				
 			case FAILED:
 				String errorMsg = getErrorMessage(scenario);
-				extentReports.createTest(testName).fail(errorMsg).addScreenCaptureFromPath(getScreenShotLocation(screenShotFile));
+				extentReports.createTest(testName).fail(errorMsg).addScreenCaptureFromPath(screenShotFile,testName);
 				break;
 
 			default:
@@ -51,26 +50,31 @@ public class CustomExtentReporter {
 		}
 	}
 	
+	@SuppressWarnings("unchecked")
 	private String getErrorMessage(Scenario scenario) {
+		
 		List<Result> testResultList = null;
 		List<Result> failedStepList = null;
-		
+
 		try {
-			 Field stepResults = scenario.getClass().getDeclaredField("stepResults");
-			 stepResults.setAccessible(true);
-			 testResultList = (List<Result>)stepResults.get(scenario);
-		} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
-			e.printStackTrace();
+			Field stepResults = scenario.getClass().getDeclaredField("delegate");
+			stepResults.setAccessible(true);
+			Field resutlField = ((stepResults.get(scenario)).getClass().getDeclaredField("stepResults"));
+			resutlField.setAccessible(true);
+			testResultList = (List<Result>)(resutlField.get(stepResults.get(scenario)));
+		}catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException  e) {
+			  e.printStackTrace(); 
 		}
-		if(testResultList != null && !testResultList.isEmpty()){
-			failedStepList = testResultList.stream().filter((x) ->{
-				return x.getErrorMessage() != null;
+		if (testResultList != null && !testResultList.isEmpty()) {
+			failedStepList = testResultList.stream().filter((x) -> {
+				return x.getError() != null;
 			}).collect(Collectors.toList());
 		}
-		
-		if(failedStepList != null && !failedStepList.isEmpty()){
-			return failedStepList.get(0).getErrorMessage();
+
+		if (failedStepList != null && !failedStepList.isEmpty()) {
+			return failedStepList.get(0).getError().getMessage();
 		}
+		
 		return "";
 	}
 	

@@ -3,13 +3,13 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.webdriver.browserfunction.BrowserFunctionRunner">
+      <class name="com.webdriver.datadriven.DataDrivenRunner">
         <methods>
-          <include name="runScenario" invocation-numbers="3"/>
+          <include name="runScenario" invocation-numbers="1"/>
           <include name="tearDownClass"/>
           <include name="setUpClass"/>
         </methods>
-      </class> <!-- com.webdriver.browserfunction.BrowserFunctionRunner -->
+      </class> <!-- com.webdriver.datadriven.DataDrivenRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

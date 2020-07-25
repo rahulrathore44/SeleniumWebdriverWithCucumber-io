@@ -3,13 +3,13 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.webdriver.datadriven.DataDrivenRunner">
+      <class name="com.webdriver.runner.CustomGenericRunner">
         <methods>
-          <include name="runScenario" invocation-numbers="1"/>
-          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="4 5 6 7 13 19 28"/>
           <include name="setUpClass"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.webdriver.datadriven.DataDrivenRunner -->
+      </class> <!-- com.webdriver.runner.CustomGenericRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

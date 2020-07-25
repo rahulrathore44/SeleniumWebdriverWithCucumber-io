@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
 import com.aventstack.extentreports.AnalysisStrategy;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import io.cucumber.java.Scenario;
 import io.cucumber.plugin.event.Result;
@@ -24,8 +25,11 @@ public class CustomExtentReporter {
 	
 	public CustomExtentReporter(String reportLocation) {
 		extentHtmlReporter = new ExtentHtmlReporter(new File(reportLocation));
+		extentHtmlReporter.config().enableTimeline(true);
+		extentHtmlReporter.config().setTheme(Theme.DARK);
+		extentHtmlReporter.config().setReportName("Cucmber Execution Report");
 		extentReports = new ExtentReports();
-		extentReports.setAnalysisStrategy(AnalysisStrategy.TEST);
+		extentReports.setAnalysisStrategy(AnalysisStrategy.SUITE);
 		extentReports.attachReporter(extentHtmlReporter);
 	}
 	

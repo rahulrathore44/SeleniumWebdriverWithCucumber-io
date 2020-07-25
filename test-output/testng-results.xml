@@ -1,20 +1,244 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+<testng-results skipped="0" failed="7" ignored="0" total="30" passed="23">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56677" started-at="2020-05-24T19:43:57Z" finished-at="2020-05-24T19:44:54Z">
+  <suite name="Default suite" duration-ms="283686" started-at="2020-07-25T00:28:18Z" finished-at="2020-07-25T00:33:02Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.datadriven.DataDrivenRunner@23529fee]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="CustomAbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" class="com.webdriver.io.customrunner.CustomAbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="56677" started-at="2020-05-24T19:43:57Z" finished-at="2020-05-24T19:44:54Z">
-      <class name="com.webdriver.datadriven.DataDrivenRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.webdriver.datadriven.DataDrivenRunner@23529fee]" name="setUpClass" is-config="true" duration-ms="222" started-at="2020-05-24T12:43:57Z" finished-at="2020-05-24T12:43:57Z">
+    <test name="Default test" duration-ms="283686" started-at="2020-07-25T00:28:18Z" finished-at="2020-07-25T00:33:02Z">
+      <class name="com.webdriver.runner.CustomGenericRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="setUpClass" is-config="true" duration-ms="345" started-at="2020-07-24T17:28:18Z" finished-at="2020-07-24T17:28:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.datadriven.DataDrivenRunner@23529fee]" name="runScenario" duration-ms="12723" started-at="2020-05-24T12:43:57Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-24T12:44:10Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="9775" started-at="2020-07-24T17:28:18Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:28:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Handling Alerts"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Working with Java Script Popup"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="11406" started-at="2020-07-24T17:28:28Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:28:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Working with confirmation popup"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Working with Java Script Popup"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="13427" started-at="2020-07-24T17:28:39Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:28:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Working with prompt"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Working with Java Script Popup"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="11420" started-at="2020-07-24T17:28:53Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:29:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Working with Bootstrap popup"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Working with Java Script Popup"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="5397" started-at="2020-07-24T17:29:04Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:29:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Browser Function"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Browser Function"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 80Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'L33986WUS', ip: '55.55.55.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'Driver info: driver.version: ChromeDriverremote stacktrace: Backtrace:Ordinal0 [0x009B0C83+1707139]Ordinal0 [0x009168F1+1075441]Ordinal0 [0x0088DFC9+516041]Ordinal0 [0x00820554+66900]Ordinal0 [0x0081CCE2+52450]Ordinal0 [0x0083BFD7+180183]Ordinal0 [0x0083BDDD+179677]Ordinal0 [0x00839D4B+171339]Ordinal0 [0x00821D4A+73034]Ordinal0 [0x00822DC0+77248]Ordinal0 [0x00822D59+77145]Ordinal0 [0x0092BB67+1162087]GetHandleVerifier [0x00A4A966+508998]GetHandleVerifier [0x00A4A6A4+508292]GetHandleVerifier [0x00A5F7B7+594583]GetHandleVerifier [0x00A4B1D6+511158]Ordinal0 [0x0092402C+1130540]Ordinal0 [0x0092D4CB+1168587]Ordinal0 [0x0092D633+1168947]Ordinal0 [0x00945B35+1268533]BaseThreadInitThunk [0x74F40419+25]RtlGetAppContainerNamedObjectPath [0x775566DD+237]RtlGetAppContainerNamedObjectPath [0x775566AD+189]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 80Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'L33986WUS', ip: '55.55.55.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'Driver info: driver.version: ChromeDriverremote stacktrace: Backtrace:Ordinal0 [0x009B0C83+1707139]Ordinal0 [0x009168F1+1075441]Ordinal0 [0x0088DFC9+516041]Ordinal0 [0x00820554+66900]Ordinal0 [0x0081CCE2+52450]Ordinal0 [0x0083BFD7+180183]Ordinal0 [0x0083BDDD+179677]Ordinal0 [0x00839D4B+171339]Ordinal0 [0x00821D4A+73034]Ordinal0 [0x00822DC0+77248]Ordinal0 [0x00822D59+77145]Ordinal0 [0x0092BB67+1162087]GetHandleVerifier [0x00A4A966+508998]GetHandleVerifier [0x00A4A6A4+508292]GetHandleVerifier [0x00A5F7B7+594583]GetHandleVerifier [0x00A4B1D6+511158]Ordinal0 [0x0092402C+1130540]Ordinal0 [0x0092D4CB+1168587]Ordinal0 [0x0092D633+1168947]Ordinal0 [0x00945B35+1268533]BaseThreadInitThunk [0x74F40419+25]RtlGetAppContainerNamedObjectPath [0x775566DD+237]RtlGetAppContainerNamedObjectPath [0x775566AD+189]at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)at com.webdriver.browserfunction.BrowserFunctionStepDfn.browserfunction_i_have_chrome_driver_instance(BrowserFunctionStepDfn.java:32)at ✽.BrowserFunction_I have chrome driver instance(file:///C:/Data/GitHub/SeleniumWebdriverWithCucumber-io/src/main/java/com/webdriver/browserfunction/BrowserFunction.feature:5)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="5444" started-at="2020-07-24T17:29:10Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:29:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Browser Function Open Webpage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Browser Function"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 80Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'L33986WUS', ip: '55.55.55.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'Driver info: driver.version: ChromeDriverremote stacktrace: Backtrace:Ordinal0 [0x009B0C83+1707139]Ordinal0 [0x009168F1+1075441]Ordinal0 [0x0088DFC9+516041]Ordinal0 [0x00820554+66900]Ordinal0 [0x0081CCE2+52450]Ordinal0 [0x0083BFD7+180183]Ordinal0 [0x0083BDDD+179677]Ordinal0 [0x00839D4B+171339]Ordinal0 [0x00821D4A+73034]Ordinal0 [0x00822DC0+77248]Ordinal0 [0x00822D59+77145]Ordinal0 [0x0092BB67+1162087]GetHandleVerifier [0x00A4A966+508998]GetHandleVerifier [0x00A4A6A4+508292]GetHandleVerifier [0x00A5F7B7+594583]GetHandleVerifier [0x00A4B1D6+511158]Ordinal0 [0x0092402C+1130540]Ordinal0 [0x0092D4CB+1168587]Ordinal0 [0x0092D633+1168947]Ordinal0 [0x00945B35+1268533]BaseThreadInitThunk [0x74F40419+25]RtlGetAppContainerNamedObjectPath [0x775566DD+237]RtlGetAppContainerNamedObjectPath [0x775566AD+189]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 80Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'L33986WUS', ip: '55.55.55.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'Driver info: driver.version: ChromeDriverremote stacktrace: Backtrace:Ordinal0 [0x009B0C83+1707139]Ordinal0 [0x009168F1+1075441]Ordinal0 [0x0088DFC9+516041]Ordinal0 [0x00820554+66900]Ordinal0 [0x0081CCE2+52450]Ordinal0 [0x0083BFD7+180183]Ordinal0 [0x0083BDDD+179677]Ordinal0 [0x00839D4B+171339]Ordinal0 [0x00821D4A+73034]Ordinal0 [0x00822DC0+77248]Ordinal0 [0x00822D59+77145]Ordinal0 [0x0092BB67+1162087]GetHandleVerifier [0x00A4A966+508998]GetHandleVerifier [0x00A4A6A4+508292]GetHandleVerifier [0x00A5F7B7+594583]GetHandleVerifier [0x00A4B1D6+511158]Ordinal0 [0x0092402C+1130540]Ordinal0 [0x0092D4CB+1168587]Ordinal0 [0x0092D633+1168947]Ordinal0 [0x00945B35+1268533]BaseThreadInitThunk [0x74F40419+25]RtlGetAppContainerNamedObjectPath [0x775566DD+237]RtlGetAppContainerNamedObjectPath [0x775566AD+189]at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)at com.webdriver.browserfunction.BrowserFunctionStepDfn.browserfunction_i_have_chrome_driver_instance(BrowserFunctionStepDfn.java:32)at ✽.BrowserFunction_I have chrome driver instance(file:///C:/Data/GitHub/SeleniumWebdriverWithCucumber-io/src/main/java/com/webdriver/browserfunction/BrowserFunction.feature:5)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="6200" started-at="2020-07-24T17:29:15Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:29:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Browser Function Back, Forward and Refresh"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Browser Function"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 80Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'L33986WUS', ip: '55.55.55.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'Driver info: driver.version: ChromeDriverremote stacktrace: Backtrace:Ordinal0 [0x009B0C83+1707139]Ordinal0 [0x009168F1+1075441]Ordinal0 [0x0088DFC9+516041]Ordinal0 [0x00820554+66900]Ordinal0 [0x0081CCE2+52450]Ordinal0 [0x0083BFD7+180183]Ordinal0 [0x0083BDDD+179677]Ordinal0 [0x00839D4B+171339]Ordinal0 [0x00821D4A+73034]Ordinal0 [0x00822DC0+77248]Ordinal0 [0x00822D59+77145]Ordinal0 [0x0092BB67+1162087]GetHandleVerifier [0x00A4A966+508998]GetHandleVerifier [0x00A4A6A4+508292]GetHandleVerifier [0x00A5F7B7+594583]GetHandleVerifier [0x00A4B1D6+511158]Ordinal0 [0x0092402C+1130540]Ordinal0 [0x0092D4CB+1168587]Ordinal0 [0x0092D633+1168947]Ordinal0 [0x00945B35+1268533]BaseThreadInitThunk [0x74F40419+25]RtlGetAppContainerNamedObjectPath [0x775566DD+237]RtlGetAppContainerNamedObjectPath [0x775566AD+189]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 80Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'L33986WUS', ip: '55.55.55.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'Driver info: driver.version: ChromeDriverremote stacktrace: Backtrace:Ordinal0 [0x009B0C83+1707139]Ordinal0 [0x009168F1+1075441]Ordinal0 [0x0088DFC9+516041]Ordinal0 [0x00820554+66900]Ordinal0 [0x0081CCE2+52450]Ordinal0 [0x0083BFD7+180183]Ordinal0 [0x0083BDDD+179677]Ordinal0 [0x00839D4B+171339]Ordinal0 [0x00821D4A+73034]Ordinal0 [0x00822DC0+77248]Ordinal0 [0x00822D59+77145]Ordinal0 [0x0092BB67+1162087]GetHandleVerifier [0x00A4A966+508998]GetHandleVerifier [0x00A4A6A4+508292]GetHandleVerifier [0x00A5F7B7+594583]GetHandleVerifier [0x00A4B1D6+511158]Ordinal0 [0x0092402C+1130540]Ordinal0 [0x0092D4CB+1168587]Ordinal0 [0x0092D633+1168947]Ordinal0 [0x00945B35+1268533]BaseThreadInitThunk [0x74F40419+25]RtlGetAppContainerNamedObjectPath [0x775566DD+237]RtlGetAppContainerNamedObjectPath [0x775566AD+189]at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)at com.webdriver.browserfunction.BrowserFunctionStepDfn.browserfunction_i_have_chrome_driver_instance(BrowserFunctionStepDfn.java:32)at ✽.BrowserFunction_I have chrome driver instance(file:///C:/Data/GitHub/SeleniumWebdriverWithCucumber-io/src/main/java/com/webdriver/browserfunction/BrowserFunction.feature:5)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="5539" started-at="2020-07-24T17:29:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:29:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Browser Function Maximize browse window while launching"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Browser Function"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 80Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'L33986WUS', ip: '55.55.55.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'Driver info: driver.version: ChromeDriverremote stacktrace: Backtrace:Ordinal0 [0x009B0C83+1707139]Ordinal0 [0x009168F1+1075441]Ordinal0 [0x0088DFC9+516041]Ordinal0 [0x00820554+66900]Ordinal0 [0x0081CCE2+52450]Ordinal0 [0x0083BFD7+180183]Ordinal0 [0x0083BDDD+179677]Ordinal0 [0x00839D4B+171339]Ordinal0 [0x00821D4A+73034]Ordinal0 [0x00822DC0+77248]Ordinal0 [0x00822D59+77145]Ordinal0 [0x0092BB67+1162087]GetHandleVerifier [0x00A4A966+508998]GetHandleVerifier [0x00A4A6A4+508292]GetHandleVerifier [0x00A5F7B7+594583]GetHandleVerifier [0x00A4B1D6+511158]Ordinal0 [0x0092402C+1130540]Ordinal0 [0x0092D4CB+1168587]Ordinal0 [0x0092D633+1168947]Ordinal0 [0x00945B35+1268533]BaseThreadInitThunk [0x74F40419+25]RtlGetAppContainerNamedObjectPath [0x775566DD+237]RtlGetAppContainerNamedObjectPath [0x775566AD+189]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 80Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'L33986WUS', ip: '55.55.55.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'Driver info: driver.version: ChromeDriverremote stacktrace: Backtrace:Ordinal0 [0x009B0C83+1707139]Ordinal0 [0x009168F1+1075441]Ordinal0 [0x0088DFC9+516041]Ordinal0 [0x00820554+66900]Ordinal0 [0x0081CCE2+52450]Ordinal0 [0x0083BFD7+180183]Ordinal0 [0x0083BDDD+179677]Ordinal0 [0x00839D4B+171339]Ordinal0 [0x00821D4A+73034]Ordinal0 [0x00822DC0+77248]Ordinal0 [0x00822D59+77145]Ordinal0 [0x0092BB67+1162087]GetHandleVerifier [0x00A4A966+508998]GetHandleVerifier [0x00A4A6A4+508292]GetHandleVerifier [0x00A5F7B7+594583]GetHandleVerifier [0x00A4B1D6+511158]Ordinal0 [0x0092402C+1130540]Ordinal0 [0x0092D4CB+1168587]Ordinal0 [0x0092D633+1168947]Ordinal0 [0x00945B35+1268533]BaseThreadInitThunk [0x74F40419+25]RtlGetAppContainerNamedObjectPath [0x775566DD+237]RtlGetAppContainerNamedObjectPath [0x775566AD+189]at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)at com.webdriver.browserfunction.BrowserFunctionStepDfn.browserfunction_i_have_chrome_driver_instance(BrowserFunctionStepDfn.java:32)at ✽.BrowserFunction_I have chrome driver instance(file:///C:/Data/GitHub/SeleniumWebdriverWithCucumber-io/src/main/java/com/webdriver/browserfunction/BrowserFunction.feature:5)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="6834" started-at="2020-07-24T17:29:27Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:29:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Working with context click"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Working with Mouse and Keyboard actions"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="8515" started-at="2020-07-24T17:29:34Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:29:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Working with drang and drop action"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Working with Mouse and Keyboard actions"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="6908" started-at="2020-07-24T17:29:42Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:29:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Working with click and hold action"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Working with Mouse and Keyboard actions"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="6886" started-at="2020-07-24T17:29:49Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:29:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Working with Keyboard action"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Working with Mouse and Keyboard actions"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="11736" started-at="2020-07-24T17:29:56Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:30:08Z">
           <params>
             <param index="0">
               <value>
@@ -30,7 +254,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.datadriven.DataDrivenRunner@23529fee]" name="runScenario" duration-ms="9280" started-at="2020-05-24T12:44:10Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-24T12:44:19Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="9879" started-at="2020-07-24T17:30:08Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:30:18Z">
           <params>
             <param index="0">
               <value>
@@ -54,7 +278,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.datadriven.DataDrivenRunner@23529fee]" name="runScenario" duration-ms="11984" started-at="2020-05-24T12:44:19Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-24T12:44:31Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="11660" started-at="2020-07-24T17:30:18Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:30:29Z">
           <params>
             <param index="0">
               <value>
@@ -70,7 +294,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.datadriven.DataDrivenRunner@23529fee]" name="runScenario" duration-ms="11113" started-at="2020-05-24T12:44:31Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-24T12:44:43Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="12381" started-at="2020-07-24T17:30:29Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:30:42Z">
           <params>
             <param index="0">
               <value>
@@ -86,7 +310,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.datadriven.DataDrivenRunner@23529fee]" name="runScenario" duration-ms="11317" started-at="2020-05-24T12:44:43Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-24T12:44:54Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="12053" started-at="2020-07-24T17:30:42Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:30:54Z">
           <params>
             <param index="0">
               <value>
@@ -102,11 +326,235 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.webdriver.datadriven.DataDrivenRunner@23529fee]" name="tearDownClass" is-config="true" duration-ms="3" started-at="2020-05-24T12:44:54Z" finished-at="2020-05-24T12:44:54Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="12603" started-at="2020-07-24T17:30:54Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:31:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Click on the element presetn in Iframe"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Working with Iframe"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="17712" started-at="2020-07-24T17:31:06Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:31:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Working with MultipleWindow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Working with Iframe"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="6548" started-at="2020-07-24T17:31:24Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:31:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Bug Creation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create bug in bugzila application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[To Take the Screen Shot]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: To Take the Screen Shotat org.testng.Assert.fail(Assert.java:96)at com.webdriver.page.BugCreationStepDfn.bugzilla_the_title_of_login_page_should_be(BugCreationStepDfn.java:58)at ✽.Bugzilla_The title of login page should be "Log in to Bugzilla"(file:///C:/Data/GitHub/SeleniumWebdriverWithCucumber-io/src/main/java/com/webdriver/page/BugCreation.feature:6)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="12476" started-at="2020-07-24T17:31:31Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:31:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Bug Creation for Test Product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create bug in bugzila application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="13841" started-at="2020-07-24T17:31:43Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:31:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Usage of Custom Factory"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create bug in bugzila application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="13214" started-at="2020-07-24T17:31:57Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:32:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Web driver wait - fixed wait"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Web driver wait fuction"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="9855" started-at="2020-07-24T17:32:10Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:32:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Web driver wait - Implicit wait"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Web driver wait fuction"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="10467" started-at="2020-07-24T17:32:20Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:32:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Web driver wait - Dynamic wait"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Web driver wait fuction"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="5343" started-at="2020-07-24T17:32:30Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:32:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Webelement Function for single element"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Web Element Functions"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="5339" started-at="2020-07-24T17:32:36Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:32:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Webelement Function for multiple elements"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Web Element Functions"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="6317" started-at="2020-07-24T17:32:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:32:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Working with text box"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Web Element Functions"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="7729" started-at="2020-07-24T17:32:47Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:32:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Working with Button,CheckBox Hyperlink and Radio Button"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Web Element Functions"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document  (Session info: chrome=84.0.4147.89)  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.htmlBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'L33986WUS', ip: '55.55.55.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\rathr1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 84.0.4147.89, webStorageEnabled: true}Session ID: e23413ca9b79f01f8d2c195bf04b716d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document  (Session info: chrome=84.0.4147.89)  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.htmlBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'L33986WUS', ip: '55.55.55.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\rathr1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 84.0.4147.89, webStorageEnabled: true}Session ID: e23413ca9b79f01f8d2c195bf04b716dat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)at com.webdriver.helper.ButtonHelper.click(ButtonHelper.java:22)at com.webdriver.webelementfunction.WebElementStepDfn.webelementfunction_i_call_the_click_method_on_radio_button_it_should_select_the_radio_button(WebElementStepDfn.java:112)at ✽.WebElementFunction_I call the click method on radio button it should select the radio button(file:///C:/Data/GitHub/SeleniumWebdriverWithCucumber-io/src/main/java/com/webdriver/webelementfunction/WebelementFunction.feature:27)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="runScenario" duration-ms="6005" started-at="2020-07-24T17:32:55Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-24T17:33:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Working with drop down - Combo box"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Web Element Functions"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.webdriver.runner.CustomGenericRunner@6b19b79]" name="tearDownClass" is-config="true" duration-ms="384" started-at="2020-07-24T17:33:01Z" finished-at="2020-07-24T17:33:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.webdriver.datadriven.DataDrivenRunner -->
+      </class> <!-- com.webdriver.runner.CustomGenericRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -179,7 +179,8 @@
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
-			<version>4.0.0</version>
+			<!-- <version>4.0.0</version> -->
+			<version>4.1.5</version>
 		</dependency>
 		<dependency>
 			<groupId>ru.yandex.qatools.ashot</groupId>

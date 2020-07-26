@@ -16,7 +16,7 @@ public class GeneralHook {
 	private DriverServices services;
 	private WebDriver driver;
 	
-	private static CustomExtentReporter customExtentReporter;
+	private static CustomExtentBDDReporter customExtentReporter;
 	private static boolean isReporterRunning;
 	
 	public GeneralHook(DriverServices services) {
@@ -42,13 +42,13 @@ public class GeneralHook {
 	@Before
 	public void beforeScenario(Scenario scenario) {
 		if(!isReporterRunning){
-			customExtentReporter = new CustomExtentReporter("C:\\Data\\log\\TestReport.html");
+			customExtentReporter = new CustomExtentBDDReporter("C:\\Data\\log\\TestReport.html");
 			isReporterRunning = true;
 		}
 	}
 	
 	@After
-	public void afterScenario(Scenario scenario) throws IOException {
+	public void afterScenario(Scenario scenario) throws IOException, ClassNotFoundException {
 		String screenShotFileName = "C:\\Data\\log\\" + scenario.getName().replaceAll(" ", "") + ".jpeg";
 		if(scenario.isFailed()){
 			services.getGenericHelper().takeScreenShot(screenShotFileName);

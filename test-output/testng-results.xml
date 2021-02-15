@@ -1,88 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17548" started-at="2020-04-18T02:02:28Z" finished-at="2020-04-18T02:02:46Z">
+  <suite started-at="2021-01-31T19:44:55Z" name="Default suite" finished-at="2021-01-31T19:45:08Z" duration-ms="13069">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.webdriver.session.TestSessionWithCookiesRunner@19e7a160]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="17548" started-at="2020-04-18T02:02:28Z" finished-at="2020-04-18T02:02:46Z">
-      <class name="com.webdriver.browserfunction.BrowserFunctionRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365]" name="setUpClass" is-config="true" duration-ms="110" started-at="2020-04-17T19:02:28Z" finished-at="2020-04-17T19:02:29Z">
+    <test started-at="2021-01-31T19:44:55Z" name="Default test" finished-at="2021-01-31T19:45:08Z" duration-ms="13069">
+      <class name="com.webdriver.session.TestSessionWithCookiesRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.webdriver.session.TestSessionWithCookiesRunner@19e7a160]" started-at="2021-01-31T11:44:55Z" name="setUpClass" finished-at="2021-01-31T11:44:55Z" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365]" name="runScenario" duration-ms="4208" started-at="2020-04-17T19:02:29Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T19:02:33Z">
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.webdriver.session.TestSessionWithCookiesRunner@19e7a160]" started-at="2021-01-31T11:44:55Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-31T11:45:08Z" duration-ms="12921" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Browser Function"]]>
+                <![CDATA["Login with API call and then use the same session with webdriver"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Browser Function"]]>
+                <![CDATA["To resue the same session in the browser"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365]" name="runScenario" duration-ms="3502" started-at="2020-04-17T19:02:33Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T19:02:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Browser Function Open Webpage"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Browser Function"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365]" name="runScenario" duration-ms="5710" started-at="2020-04-17T19:02:36Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T19:02:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Browser Function Back, Forward and Refresh"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Browser Function"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365]" name="runScenario" duration-ms="3958" started-at="2020-04-17T19:02:42Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T19:02:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Browser Function Maximize browse window while launching"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Browser Function"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.webdriver.browserfunction.BrowserFunctionRunner@5ec0a365]" name="tearDownClass" is-config="true" duration-ms="2" started-at="2020-04-17T19:02:46Z" finished-at="2020-04-17T19:02:46Z">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.webdriver.session.TestSessionWithCookiesRunner@19e7a160]" started-at="2021-01-31T11:45:08Z" name="tearDownClass" finished-at="2021-01-31T11:45:08Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.webdriver.browserfunction.BrowserFunctionRunner -->
+      </class> <!-- com.webdriver.session.TestSessionWithCookiesRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

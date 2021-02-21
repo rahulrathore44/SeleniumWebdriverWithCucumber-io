@@ -1,0 +1,9 @@
+1. Login into the JIRA application using the REST API call -> Non blocking call. Use the ExecutorService
+2. Extract the cookies from the response of API call
+3. Convert the cookies into webdrive equivalent cookies
+4. Pass the cookies to the webdrive script
+5. Refresh the browser , so that the browser will use the new cookies and reuse the session
+
+1. LoginDetails -> Store the login details and also provide the JSON rep of the login details
+2. ApplicationLogin -> Send the API call to the application using RestAssured and return the cookies from response
+3. CookieConverter -> Convert the Rest Assured cookies to selenium cookies

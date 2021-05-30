@@ -79,6 +79,12 @@ public class CustomAbstractTestNGCucumberTests {
 		
 		if(data != null){
 			for (int i = 0; i < data.length; i++) {
+				/* For v6+
+				 * FeatureWrapper cucumberFeatureWrapper = (FeatureWrapper)data[i][1]; String
+				 * featureName =
+				 * getFeatureName(cucumberFeatureWrapper.toString().trim().replaceAll("\"",
+				 * "")); if(featureList.contains(featureName)){
+				 */
 				CucumberFeatureWrapper cucumberFeatureWrapper = (CucumberFeatureWrapper)data[i][1];
 				if(featureList.contains(cucumberFeatureWrapper.toString().trim().replaceAll("\"", ""))){
 					modifiedList.add(data[i]);
@@ -109,5 +115,12 @@ public class CustomAbstractTestNGCucumberTests {
         }
         testNGCucumberRunner.finish();
     }
+    
+	/* For v6+
+	 * private String getFeatureName(String name) { String featureName =
+	 * name.replace("Optional[",""); if(featureName.lastIndexOf("]") != -1){
+	 * featureName = featureName.substring(0, featureName.lastIndexOf("]")); }
+	 * return featureName; }
+	 */
 
 }

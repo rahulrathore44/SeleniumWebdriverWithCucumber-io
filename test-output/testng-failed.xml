@@ -3,13 +3,11 @@
 <suite thread-count="-1" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.webdriver.session.SessionWithCookiesRunner">
+      <class name="com.webdriver.questions.staleelement.TestStaleElementException">
         <methods>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
+          <include name="testStaleElement"/>
         </methods>
-      </class> <!-- com.webdriver.session.SessionWithCookiesRunner -->
+      </class> <!-- com.webdriver.questions.staleelement.TestStaleElementException -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

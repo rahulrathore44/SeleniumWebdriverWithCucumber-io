@@ -17,6 +17,7 @@ public class TestElementLocator {
 		ChromeOptions options = new ChromeOptions();
 		WebDriver driver = new ChromeDriver(options);
 		PageFactory.initElements(new AjaxElementLocatorFactory(driver, 20), new HomePageElementLocator());
+		driver.quit();
 
 	}
 

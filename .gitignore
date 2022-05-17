@@ -47,6 +47,9 @@ local.properties
 # Code Recommenders
 .recommenders/
 
+# report
+test-output/
+
 # Scala IDE specific (Scala & Java development for Eclipse)
 .cache-main
 .scala_dependencies

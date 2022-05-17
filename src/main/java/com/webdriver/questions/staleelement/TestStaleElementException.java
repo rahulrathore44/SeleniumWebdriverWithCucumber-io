@@ -15,7 +15,7 @@ public class TestStaleElementException {
 	private final String searchTxtBxId = "quicksearch_top";
 
 	@Test
-	public void testStaleElement() {
+	public void testStaleElement() throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 
@@ -32,6 +32,7 @@ public class TestStaleElementException {
 			search.clear();
 			driver.navigate().refresh(); // make the search ref stale
 			search.sendKeys("Stale Element Ref Exception");
+			TimeUnit.SECONDS.sleep(3);
 
 		} finally {
 			if (driver != null)
